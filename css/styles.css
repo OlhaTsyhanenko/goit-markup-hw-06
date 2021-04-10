@@ -514,8 +514,10 @@ img {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  border: 0;
   outline: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .btn.main {
@@ -555,6 +557,28 @@ img {
   color: var(--text-color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-subscription {
+  display: flex;
+  align-items: center;
+  color: var(--text-color-white);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  padding-bottom: 10px;
+  padding-right: 28px;
+  padding-top: 10px;
+  padding-left: 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.btn-subscription .icon-send {
+  fill: var(--bg-white);
+  margin-left: 10px;
 }
 
 /* logo */
@@ -628,14 +652,16 @@ img {
 
 .footer .container .grid {
   display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
+  justify-content: space-between;
 }
 
 .grid .part {
   flex-basis: calc((50% - 45px) / 2);
-  margin-left: 30px;
-  margin-top: 30px;
+  align-self: baseline;
+}
+
+.grid .subscription {
+  flex-basis: calc(50% - 15px);
   align-self: baseline;
 }
 
@@ -673,6 +699,22 @@ img {
 .socnetworks-list .link:hover,
 .socnetworks-list .link:focus {
   background-color: var(--accent-color);
+}
+
+/* .form {
+  display: flex;
+  flex-direction: column;
+} */
+
+.form-name {
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-color-white);
 }
 
 /* modal */
