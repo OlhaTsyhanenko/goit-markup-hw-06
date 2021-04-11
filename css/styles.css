@@ -508,6 +508,7 @@ img {
 .portfolio-link:focus .thumb .description {
   transform: translateY(-100%);
 }
+
 /* buton */
 
 .btn {
@@ -520,7 +521,8 @@ img {
   background-color: transparent;
 }
 
-.btn.main {
+.hero .btn-main,
+.footer .btn-subscription {
   color: var(--text-color-white);
   font-weight: bold;
   font-size: 16px;
@@ -529,56 +531,56 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
+
   transition: background-color var(--time) var(--timing-function);
 }
 
-.btn.main:hover,
-.btn.main:focus {
+.btn-main {
+  padding: 10px 32px;
+}
+
+.btn-subscription {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-right: 28px;
+  padding-top: 10px;
+  padding-left: 29px;
+}
+
+.btn-subscription .icon-send {
+  fill: var(--bg-white);
+  margin-left: 10px;
+}
+
+.btn-main:hover,
+.btn-main:focus,
+.btn-subscription:hover,
+.btn-subscription:focus {
   background-color: #188ce8;
 }
 
-.btn.portfolio {
+.btn-portfolio {
   color: var(--text-color-title);
   background-color: var(--bg-second);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   border-radius: 4px;
+
   padding: 6px 22px;
+
   transition: background-color var(--time) var(--timing-function),
+    color var(--time) var(--timing-function),
     box-shaddow var(--time) var(--timing-function);
 }
 
-.btn.portfolio:hover,
-.btn.portfolio:focus {
+.btn-portfolio:hover,
+.btn-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--text-color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.btn-subscription {
-  display: flex;
-  align-items: center;
-  color: var(--text-color-white);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  padding-bottom: 10px;
-  padding-right: 28px;
-  padding-top: 10px;
-  padding-left: 29px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.btn-subscription .icon-send {
-  fill: var(--bg-white);
-  margin-left: 10px;
 }
 
 /* logo */
@@ -758,18 +760,15 @@ img {
   transition: transform var(--time) var(--timing-function);
 }
 
-.modal .btn-close {
+.btn.btn-close {
   position: absolute;
   right: 8px;
   top: 8px;
   width: 30px;
   height: 30px;
-  padding: 0;
-  border: none;
   border-radius: 50%;
-  background-color: transparent;
+
   stroke: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
 .modal .btn-close:hover,
