@@ -561,12 +561,21 @@
           </div>
           <div class="form-field">
             <label for="comment">Комментарий</label>
-            <textarea
-              name="comment"
-              id="comment"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <textarea name="comment" id="comment"></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" name="accept" id="accept" />
+            <label for="accept">
+              Соглашаюсь с рассылкой и принимаю
+              <a
+                class="link-accept"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Условия договора"
+                >Условия договора
+              </a>
+            </label>
           </div>
           <button type="submit" class="btn btn-send">Отправить</button>
         </form>
