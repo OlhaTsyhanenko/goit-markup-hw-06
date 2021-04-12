@@ -526,7 +526,7 @@
           <div class="subscription">
             <form class="form">
               <label for="mail" class="form-name">Подпишитесь на рассылку</label
-              ><input type="email" name="mail" id="mail" />
+              ><input type="email" name="mail" id="mail" placeholder="E-mail" />
               <button type="submit" class="btn btn-subscription">
                 Подписаться<svg width="24" height="24" class="icon-send">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -545,6 +545,31 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
+        <form class="modal-form">
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-send">Отправить</button>
+        </form>
       </div>
     </div>
 

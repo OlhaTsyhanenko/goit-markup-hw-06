@@ -522,7 +522,8 @@ img {
 }
 
 .hero .btn-main,
-.footer .btn-subscription {
+.footer .btn-subscription,
+.modal .btn-send {
   color: var(--text-color-white);
   font-weight: bold;
   font-size: 16px;
@@ -556,7 +557,9 @@ img {
 .btn-main:hover,
 .btn-main:focus,
 .btn-subscription:hover,
-.btn-subscription:focus {
+.btn-subscription:focus,
+.modal .btn-send:hover,
+.modal .btn-send:focus {
   background-color: #188ce8;
 }
 
@@ -748,6 +751,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
 
   width: 528px;
   height: 581px;
@@ -780,4 +784,55 @@ img {
 .modal .btn-close:focus {
   outline: none;
   fill: var(--accent-color);
+}
+
+.btn.btn-send {
+  padding: 10px 55px 10px 56px;
+}
+
+.modal .modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-title);
+  margin-bottom: 12px;
+}
+
+/* modal-form */
+
+.modal-form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid red;
+}
+
+.modal-form .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  outline: 1px solid blue;
+}
+
+.form-field input {
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  padding-right: 42px;
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+  color: var(--text-color-primary);
 }
