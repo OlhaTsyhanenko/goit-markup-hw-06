@@ -547,6 +547,7 @@ img {
   padding-right: 28px;
   padding-top: 10px;
   padding-left: 29px;
+  margin-left: 12px;
 }
 
 .btn-subscription .icon-send {
@@ -706,12 +707,12 @@ img {
   background-color: var(--accent-color);
 }
 
-/* .form {
+.subscription .form-field {
   display: flex;
-  flex-direction: column;
-} */
+  justify-content: flex-end;
+}
 
-.form-name {
+.subscription .form-name {
   display: block;
   margin-bottom: 20px;
   text-align: left;
@@ -720,6 +721,19 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--text-color-white);
+}
+
+.subscription .form-field input {
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* modal */
@@ -816,7 +830,7 @@ img {
   /* outline: 1px solid blue; */
 }
 
-.form-field input {
+.modal-form .form-field input {
   padding-top: 12px;
   padding-left: 16px;
   padding-bottom: 12px;
@@ -827,7 +841,7 @@ img {
   border-radius: 4px;
 }
 
-.form-field label {
+.modal-form .form-field label {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -836,7 +850,7 @@ img {
   color: var(--text-color-primary);
 }
 
-.form-field textarea {
+.modal-form .form-field textarea {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
@@ -845,19 +859,19 @@ img {
   font-size: 14px;
 }
 
-.form-checkbox {
+.modal-form .form-checkbox {
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.form-checkbox label {
+.modal-form .form-checkbox label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color-primary);
 }
 
-.link-accept {
+.modal-form .link-accept {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
