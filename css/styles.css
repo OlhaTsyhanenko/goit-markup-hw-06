@@ -671,7 +671,8 @@ img {
   align-self: baseline;
 }
 
-.socnetworks .section-title {
+.socnetworks .section-title,
+.subscription .section-title {
   margin-bottom: 20px;
   text-align: left;
   font-weight: 700;
@@ -710,17 +711,6 @@ img {
 .subscription .form-field {
   display: flex;
   justify-content: flex-end;
-}
-
-.subscription .form-name {
-  display: block;
-  margin-bottom: 20px;
-  text-align: left;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--text-color-white);
 }
 
 .subscription .form-field input {
