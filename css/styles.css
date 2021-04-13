@@ -800,6 +800,9 @@ img {
 }
 
 .btn.btn-send {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px 55px 10px 56px;
 }
 
@@ -851,6 +854,7 @@ img {
 }
 
 .modal-form .form-field textarea {
+  resize: none;
   width: 448px;
   height: 120px;
   padding: 12px 16px;
