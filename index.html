@@ -554,30 +554,46 @@
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="modal-form">
-          <div class="form-field">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div class="form-field">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
-          </div>
-          <div class="form-field">
-            <label for="email">Почта</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div class="form-field">
-            <label for="comment">Комментарий</label>
+          <label class="form-field"
+            ><span class="form-label">Имя</span>
+            <div class="wrap">
+              <input class="input" type="text" name="name" />
+              <svg width="18" height="18" class="icon">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="form-field"
+            ><span class="form-label">Телефон</span>
+            <div class="wrap">
+              <input class="input" type="tel" name="tel" />
+              <svg width="18" height="18" class="icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="form-field"
+            ><span class="form-label">Почта</span>
+            <div class="wrap">
+              <input class="input" type="email" name="email" />
+              <svg width="18" height="18" class="icon">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="form-field"
+            ><span class="form-label">Комментарий</span>
             <textarea
               name="comment"
-              id="comment"
+              rows="6"
               placeholder="Введите текст"
             ></textarea>
-          </div>
-          <div class="form-checkbox">
-            <input type="checkbox" name="accept" id="accept" />
-            <label for="accept">
-              Соглашаюсь с рассылкой и принимаю
+          </label>
+
+          <label class="form-checkbox">
+            <span class="label"
+              >Соглашаюсь с рассылкой и принимаю
               <a
                 class="link-accept"
                 href=""
@@ -586,8 +602,13 @@
                 aria-label="Условия договора"
                 >Условия договора
               </a>
-            </label>
-          </div>
+            </span>
+            <input class="checkbox" type="checkbox" name="accept" />
+            <svg class="icon">
+              <use href="./images/symbol-defs.svg#icon-check"></use>
+            </svg>
+          </label>
+
           <button type="submit" class="btn btn-send">Отправить</button>
         </form>
       </div>
