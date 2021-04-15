@@ -809,28 +809,13 @@ img {
 .modal-form {
   margin-left: auto;
   margin-right: auto;
-
-  /* outline: 1px solid red; */
 }
 
 .modal-form .form-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-
-  /* outline: 1px solid blue; */
 }
-
-/* .modal-form .form-field input {
-  padding-top: 12px;
-  padding-left: 16px;
-  padding-bottom: 12px;
-  padding-right: 42px;
-  font-size: 14px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-} */
 
 .wrap .input {
   width: 100%;
@@ -875,9 +860,8 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-form .form-field textarea {
+.form-field .textarea {
   resize: none;
-  width: 448px;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -885,41 +869,64 @@ img {
   font-size: 14px;
 }
 
-.modal-form .form-checkbox {
-  display: block;
+.form-field:focus-within .textarea {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.modal-form .form-checkbox .label {
+.form-checkbox .label {
+  margin-left: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color-primary);
 }
 
-.modal-form .link-accept {
+.form-checkbox .link-accept {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--accent-color);
 }
 
-/* .checkbox {
-  appearance: none;
-  position: absolute;
-} */
+.checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 
 .form-checkbox .icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 16px;
   height: 15px;
 
   border: 2px solid var(--text-color-title);
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .checkbox:checked + .icon {
-  fill: red;
-  stroke: var(--accent-color);
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: transparent;
 }

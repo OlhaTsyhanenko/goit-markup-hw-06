@@ -528,6 +528,7 @@
             <form class="form">
               <div class="form-field">
                 <input
+                  class="input"
                   type="email"
                   name="mail"
                   id="mail"
@@ -585,6 +586,7 @@
           <label class="form-field"
             ><span class="form-label">Комментарий</span>
             <textarea
+              class="textarea"
               name="comment"
               rows="6"
               placeholder="Введите текст"
@@ -592,6 +594,12 @@
           </label>
 
           <label class="form-checkbox">
+            <input class="checkbox" type="checkbox" name="accept" />
+            <span class="icon">
+              <svg width="12" height="15">
+                <use href="./images/symbol-defs.svg#icon-check"></use>
+              </svg>
+            </span>
             <span class="label"
               >Соглашаюсь с рассылкой и принимаю
               <a
@@ -603,10 +611,6 @@
                 >Условия договора
               </a>
             </span>
-            <input class="checkbox" type="checkbox" name="accept" />
-            <svg class="icon">
-              <use href="./images/symbol-defs.svg#icon-check"></use>
-            </svg>
           </label>
 
           <button type="submit" class="btn btn-send">Отправить</button>
