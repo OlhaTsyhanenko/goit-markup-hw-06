@@ -918,6 +918,7 @@ img {
 .form-checkbox .icon {
   display: flex;
   align-items: center;
+  /* display: inline; */
   width: 16px;
   height: 15px;
 
